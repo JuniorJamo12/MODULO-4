@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 2 </title>
+    <style>
+
+              body{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                background-color:rgba(0, 255, 255, 0.278) ; 
+
+              }
+
+              div{
+                background-color: rgba(255, 0, 0, 0.329);
+                padding: 25px;
+                margin: 25px;
+                border-radius: 20%;
+              }
+
+    </style>
+
+
+</head>
+<body>
+
+<h1>testando formulario</h1>
+    <div>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iusu"> Usuario </label>
+                <input type="text" name="usu" id="iusu" required minlength="3" placeholder="nome do Usuario" size="20">
+            </p>
+            <p>
+                <label for="isenha"> Senha </label>
+                <input type="password" name="senha" id="isenha" required placeholder="digite a senha" size="19">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>
