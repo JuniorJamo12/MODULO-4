@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+
+    <h1>formulario</h1>
+
+    <form action="post" method="post">
+
+      <p>
+        <label for="iano"> ano de nascencia</label>
+        <input type="number" min="1990" max="2020" id="iano" required oninput="idade.innerHTML = Number (2025) - Number (iano.value)">
+      </p>
+
+      <p>
+         <label for="idade"> sua idade</label>
+        <output id="idade">0</output>
+      </p>
+
+
+
+
+    </form>
+    
+</body>
+</html>

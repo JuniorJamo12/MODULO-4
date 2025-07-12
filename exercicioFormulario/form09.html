@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fromulario 09</title>
+</head>
+<body>
+
+    <form action="cadastro.php" method="post">
+
+           <h1> formulario</h1>
+
+           <p>
+           
+            <label for="ran">numero</label>
+            <input type="range" min="0" max="10" id="iran" value="5" oninput="ival.innerHTML = Number (iran.value)">
+            <output id="ival">5</output>
+           </p>
+
+           <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+           </p>
+
+
+
+    </form>
+    
+</body>
+</html>

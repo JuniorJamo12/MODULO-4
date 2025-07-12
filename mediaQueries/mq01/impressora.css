@@ -1,0 +1,26 @@
+@charset "UTF-8" ; 
+/* estilo para impressao  */
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    /* faceis de ler no papel */
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+     display: none;
+}
+
+article::after{
+    content: 'esse artigo foi impresso atraves do esctior junior jamo';
+}
+
+article{
+    width: 100vw;
+}
