@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomrulario 7</title>
+</head>
+<body>
+<form action="cadastro.php" method="post">
+    
+        <p>
+            <label for="iprovincia"> provinica </label>
+            <select name="provincia" id="iprovincia" style="width: 150px ;  height : 40px ;">
+    
+                  <option value="" selected>--escolha a provincia--</option>
+                  <optgroup label="regiao sul">
+                      <option value="MP"> maputo</option>
+                      <option value="IN">inhambane</option>
+                      <option value="GZ">gaza</option>
+                  </optgroup>
+    
+                  <optgroup label="regiao centro e norte">
+                      <option value="NI">niassa</option>
+                      <option value="CB"> cabo delgado</option>
+                      <option value="NP">nampula</option>
+                      <option value="TE">tete</option>
+                      <option value="ZM">zambezia</option>
+                  </optgroup>
+            </select>
+        </p>
+    
+        <p>
+               <label for="profissao"> profissao</label>
+              <input type="text" id="profissao" list="lista">
+    
+            <datalist id="lista">
+                <option value="ME">medico</option>
+                <option value="ENG">engenheiro</option>
+                <option value="PI">piloto</option>
+                <option value="ME">mecanico</option>
+    
+            </datalist>
+    
+        </p>
+    
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+</form>
+
+</body>
+</html>
