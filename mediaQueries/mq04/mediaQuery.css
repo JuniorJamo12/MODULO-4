@@ -2,6 +2,96 @@
 
 /* TODAS MIDIAS  */
 
-@media print {
+/*  TYPYCALL BREAK POINT 
+ 
+📱 Telefone normal	≤ 768px	@media (max-width: 768px)
+📲 Tablet (portrait)	≤ 992px	@media (max-width: 992px)
+💻 Laptop/Tablet landscape	≤ 1200px	@media (max-width: 1200px)
+🖥️ Desktop grande	> 1200px	@media (min-width: 1201px)
+*/
+/* 
+
+FIZEMOS MOBILE FIRST ENTAO NAO E NECESSARIO REPETIR CONFIGURACAO DE TELEFONE PEQUENO 
+
+@media screen and (max-width : 600px) {
+
+}
+
+@media screen and (min-width: 600px ) and (max-width : 768px) {
     
+} */
+
+
+@media screen and (min-width : 768px) and (max-width : 992px) {
+
+        body{
+            background-image: url(imagens/back-tablet.jpg) ;
+        }    
+        /* 
+        img#tablet{
+            display: block;
+        } */
+        img#celular{  display: none; }
+        img#tablet{ display: block;}
+        img#printer{display: none;}
+        img#tv{display: none;}
+        img#desktop{display: none;}
+
+}
+
+@media screen  and (min-width : 992px) and (max-width:1200px) {
+    
+    body{
+        background-image: url(imagens/back-pc.jpg);
+    }
+
+    img#celular{  display: none; }
+        img#tablet{ display: none;}
+        img#printer{display: none;}
+        img#tv{display: none;}
+        img#desktop{display: block;}
+}
+
+@media screen and (min-width : 1200px) {
+    body{
+        background-image: url(imagens/back-tv.jpg);
+    }
+       img#celular{  display: none; }
+        img#tablet{ display: none;}
+        img#printer{display: none;}
+        img#tv{display: block;}
+        img#desktop{display: none;}
+    
+}
+
+@media print  {
+
+    body{
+        /* background-image: url(imagens/back-print.jpg); */
+        font-family: 'Courier New', Courier, monospace;      
+    }
+
+   main > h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main{
+         border: 2px solid black;
+
+    }
+
+    main::after{
+
+        content: "feito por junior jamo";
+        text-decoration: underline;
+
+    }
+
+    img#celular{  display: none; }
+    img#tablet{ display: none;}
+    img#printer{display: block;}
+    img#tv{display: none;}
+    img#desktop{display: none;}
+
 }

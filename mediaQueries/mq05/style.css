@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@media screen and (min-width : 768px) and (max-width :992px) {
+
+    body {
+
+        text-align: justify;
+        font-size: 1.0em;
+    }
+
+    menu>nav>a {
+        margin: auto;
+    }
+
+}
+
+
+@media screen and (min-width : 992px) and (max-width:1200px) {
+    body {}
+
+    h1 {
+        font-size: 1.9em;
+        color: red;
+    }
+
+
+}
+
+
+@media screen and (min-width : 1200px) {
+
+    section {
+        padding-left: 22%;
+        padding-right: 22%;
+        /* height: 300px; */
+    }
+
+    h1 {
+        color: green;
+    }
+
+    menu {
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 32px;
+    }
+
+}
