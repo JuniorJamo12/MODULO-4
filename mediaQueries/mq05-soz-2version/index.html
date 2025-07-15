@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerciciom mq05</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+        <link rel="stylesheet" href="styleQuerie.css">
+    </head>
+
+<body onresize="mudouTamanhoTela()">
+
+    <header>
+
+        <h1>meu site</h1>
+        <span class="material-symbols-outlined" onclick="cliqueMenu()">
+            menu
+        </span>
+        
+        <menu id="menuItems">
+            <ul id="">
+
+                <li><a href="">opcao 1 </a></li>
+                <li><a href="">opcao 2 </a></li>
+                <li><a href="">opcao 3 </a></li>
+                <li><a href="">opcao 4</a></li>
+                <li><a href="">opcao 5 </a></li>
+            </ul>
+
+        </menu>
+
+    </header>
+
+    <main>
+        <article>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, quaerat. Non, maiores eligendi
+                unde distinctio deserunt quisquam voluptate modi esse quod, provident nulla nesciunt soluta
+                excepturi debitis suscipit ut explicabo!
+                Maiores nostrum a ad officiis harum veritatis. Ex sed aut veniam assumenda officiis nostrum ipsum
+                eveniet magni, iure accusantium iusto, omnis dolores fugit unde cupiditate dolor optio, itaque
+                recusandae mollitia!
+                Asperiores fuga perspiciatis excepturi modi dolor, architecto necessitatibus deserunt quae esse,
+                debitis ea fugiat, nesciunt ipsam quos unde tempora nisi eius dicta? Ipsam eum beatae earum,
+                voluptatem quod asperiores illo.
+                Suscipit laboriosam ducimus sapiente nobis! Voluptate rerum debitis pariatur perspiciatis, assumenda
+                repellendus, quod molestias illo quis ipsum odit minima! Odit quod architecto saepe ullam voluptates
+                id, facilis ab ratione. Cupiditate?
+                Cumque id labore voluptates vitae. Nostrum, aperiam omnis? Eius, aliquid veniam blanditiis nihil,
+                totam omnis doloribus repellendus, accusantium pariatur at rem dolore est! Totam, autem? Autem,
+                sapiente architecto! Earum, corrupti?
+                Fuga voluptate sed magnam provident quos excepturi labore eius iure nam est laborum quam, culpa
+                molestiae incidunt dicta vero nobis et repudiandae accusantium exercitationem libero numquam. Ipsa
+                accusamus unde ad!
+                Eveniet ad explicabo natus dignissimos similique pariatur aut fugiat neque officiis harum
+                consequuntur quam unde quae sunt, minus debitis eius, illum dolores sequi! Incidunt omnis fuga sed
+                facere obcaecati? Aliquam?</p>
+        </article>
+
+    </main>
+    
+<script>
+
+    function cliqueMenu() {
+
+        if (menuItems.style.display == 'block') {
+            menuItems.style.display = 'none'
+        }
+        else {
+            menuItems.style.display = 'block'
+        }
+    }
+
+     
+    function mudouTamanhoTela (){
+        if (window.innerWidth >=768){
+            menuItems.style.display= 'block'
+        }
+    }
+
+
+</script>
+
+
+</body>
+
+</html>
