@@ -7,36 +7,70 @@
     <title>Document</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+
 </head>
 
 <body>
-    <main>
 
+    <header>
         <h1> Meu site</h1>
-        <menu>
-            <nav>
-                <a href="">opcao 1</a>
-                <a href="">opcao 2</a>
-                <a href=""> opcao 3</a>
-                <a href=""> opcao 4</a>
-                <a href="">opcao 5</a>
+        <menu id="menuItems">
+            <span class="material-symbols-outlined" onclick="cliqueMenu()">
+                menu
+            </span>
+            <nav id="navv">
+                <a href="">opcao 1</a> <br>
+                <a href="">opcao 2</a> <br>
+                <a href=""> opcao 3</a> <br>
+                <a href=""> opcao 4</a> <br>
+                <a href="">opcao 5</a> <br>
             </nav>
         </menu>
-<article>
-    <section>
-        
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, ab corrupti amet sed necessitatibus et nemo magni maxime labore soluta optio cumque eum quaerat, libero aut nulla. Quas, esse voluptatibus!
-                    Accusamus necessitatibus alias vitae nemo commodi asperiores repellendus quia quasi esse delectus, consequuntur doloremque ad non repellat assumenda magnam eius! Omnis, quod fugit. Assumenda porro aliquam sunt quo, deleniti natus.
-                    Modi nisi maxime velit consectetur nulla reiciendis. Veritatis, voluptates officia? Possimus inventore nam doloremque libero! Suscipit voluptates cupiditate nesciunt molestiae nulla eos nisi! Ut, suscipit nemo in alias corporis assumenda.
-                    Ea fugit illum nulla sed explicabo iure? Unde repellendus, a molestiae modi voluptatum saepe? Impedit cupiditate harum, ducimus totam eum provident accusamus eaque eveniet, veritatis nihil quas, dolorem ea expedita?
-                </p>
-                
-    </section>
-</article>
+    </header>
+
+    <main>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, ab corrupti amet sed
+                necessitatibus et nemo magni maxime labore soluta optio cumque eum quaerat, libero aut nulla. Quas,
+                esse voluptatibus!
+                Accusamus necessitatibus alias vitae nemo commodi asperiores repellendus quia quasi esse delectus,
+                consequuntur doloremque ad non repellat assumenda magnam eius! Omnis, quod fugit. Assumenda porro
+                aliquam sunt quo, deleniti natus.
+                Modi nisi maxime velit consectetur nulla reiciendis. Veritatis, voluptates officia? Possimus
+                inventore nam doloremque libero! Suscipit voluptates cupiditate nesciunt molestiae nulla eos nisi!
+                Ut, suscipit nemo in alias corporis assumenda.
+                Ea fugit illum nulla sed explicabo iure? Unde repellendus, a molestiae modi voluptatum saepe?
+                Impedit cupiditate harum, ducimus totam eum provident accusamus eaque eveniet, veritatis nihil quas,
+                dolorem ea expedita?
+            </p>
+
+        </article>
 
     </main>
 
 </body>
+
+<script>
+
+    function cliqueMenu() {
+
+        // navv.style.display = 'block'
+
+        if (menuItems.style.display == 'block') {
+            menuItems.style.display = 'none'
+        }
+
+        else {
+            menuItems.style.display = 'block'
+        }
+
+
+    }
+
+</script>
 
 </html>

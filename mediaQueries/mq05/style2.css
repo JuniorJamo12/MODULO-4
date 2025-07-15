@@ -7,30 +7,60 @@ menu>nav>a {
     font-size: 1.5em;
     padding: 5px;
     /* text-align: left; */
+    display: block;
+    text-align: center;
 }
 
-main>h1 {
+header h1 {
     background-color: gray;
     /* padding: 20px; */
     padding-bottom: 40px;
     margin: 10px;
     text-align: center;
     box-sizing: border-box;
-
+    color: orangered;
 }
 
-article section {
+article p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     line-height: 25px;
-    background-color: white;
+    /* background-color: white; */
 }
 
-section{
-    border: 3px solid black;
-    padding: 25px;
+article{
+    /* border: 3px solid black; */
+    padding: 20px;
 }
 
 body{
     background-color: lightgray ;
 }
+
+main{
+    background-color: white;
+    margin: 10px;
+}
+
+menu a:hover{
+    background-color: rgba(127, 255, 212, 0.64);
+}
+
+span.material-symbols-outlined{
+    display: block;
+    text-align: center;
+    color: red;
+}
+
+span.material-symbols-outlined:hover{
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+header nav {
+    display: none;
+}
+/* 
+menu#menuItems{
+    display: block;
+} */
+
